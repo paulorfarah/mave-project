@@ -1,6 +1,11 @@
 public class App {
 	public String getGreeting() {
         System.out.println("start");
+        try {
+    		Thread.sleep(30000);
+    	} catch(InterruptedException e) {
+    		e.printStackTrace();
+    	}
         stringBuilder();
         try {
         	Thread.sleep(1 * 1000);
