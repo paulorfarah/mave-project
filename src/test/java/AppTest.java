@@ -9,22 +9,22 @@ public class AppTest {
         assertNotNull("app should have a greeting", classUnderTest.getGreeting());
     }
     
-    @Test public void testDelay13seconds() {
-    	try {
-			Thread.sleep(13000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-			
-		}
-    }
-    
-    @Test public void testDelay30seconds() {
-    	try {
-    		Thread.sleep(30000);
-    	} catch(InterruptedException e) {
-    		e.printStackTrace();
-    	}
-    	testDelay13seconds();
-    }
+//    @Test public void testDelay13seconds() {
+//    	try {
+//			Thread.sleep(13000);
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//			
+//		}
+//    }
+//    
+//    @Test public void testDelay30seconds() {
+//    	try {
+//    		Thread.sleep(30000);
+//    	} catch(InterruptedException e) {
+//    		e.printStackTrace();
+//    	}
+//    	testDelay13seconds();
+//    }
 
 }
