@@ -1,0 +1,11 @@
+.classpath
+.project
+.settings/
+.wall.txt.swp
+junit-platform-console-standalone-1.8.1.jar
+profile.html
+profile.txt
+target/
+wall.txt
+wall.txt.old
+
