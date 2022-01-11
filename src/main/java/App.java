@@ -1,7 +1,7 @@
 public class App {
 	public String getGreeting() {
         System.out.println("start");
-        countSetBits(123456789);
+        countSetBits(1);
         
         try {
     		Thread.sleep(30000);
