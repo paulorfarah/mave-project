@@ -6,7 +6,7 @@ import java.util.Random;
 public class App {
 
 	public String getGreeting() {
-        System.out.println("start");
+        System.out.println("start getGreeting");
 //        countSetBits(1);
         
         try {
@@ -15,11 +15,11 @@ public class App {
     		e.printStackTrace();
     	}
 //        stringBuilder();
-        try {
-        	Thread.sleep(1 * 1000);
-        	} catch (InterruptedException ie) {
-        	Thread.currentThread().interrupt();
-        	}
+//        try {
+//        	Thread.sleep(1 * 1000);
+//    	} catch (InterruptedException ie) {
+//        	Thread.currentThread().interrupt();
+//    	}
         return "Hello World!";
     }
 	
