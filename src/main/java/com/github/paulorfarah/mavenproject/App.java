@@ -14,6 +14,7 @@ public class App {
     	} catch(InterruptedException e) {
     		e.printStackTrace();
     	}
+        justPrintMessage();
 //        stringBuilder();
 //        try {
 //        	Thread.sleep(1 * 1000);

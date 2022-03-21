@@ -1,0 +1,49 @@
+Premain
+onEnter - Class: AppTest.java method: public void com.github.paulorfarah.mavenproject.AppTest.testAppHasAGreeting()
+idFile: 4
+New idMethod: 5
+onEnter - Class: App.java method: public java.lang.String com.github.paulorfarah.mavenproject.App.getGreeting()
+idFile: 3
+New idMethod: 6
+start getGreeting
+onEnter - Class: App.java method: public void com.github.paulorfarah.mavenproject.App.justPrintMessage()
+idFile: 3
+New idMethod: 7
+testing 1 2 3...
+testing 1 2 3...
+testing 1 2 3...
+testing 1 2 3...
+testing 1 2 3...
+testing 1 2 3...
+onExit - Class: App.java method: public void com.github.paulorfarah.mavenproject.App.justPrintMessage() start: 1647824099396 end: 1647824099414 duration: 18
+caller_id: 6
+own_duration: 18
+idMethod: 7
+onExit - Class: App.java method: public java.lang.String com.github.paulorfarah.mavenproject.App.getGreeting() start: 1647824069391 end: 1647824099431 duration: 30040
+caller_id: 5
+own_duration: 30040
+idMethod: 6
+onExit - Class: AppTest.java method: public void com.github.paulorfarah.mavenproject.AppTest.testAppHasAGreeting() start: 1647824069026 end: 1647824099436 duration: 30410
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+[36m╷[0m
+[36m├─[0m [36mJUnit Jupiter[0m [32m✔[0m
+[36m└─[0m [36mJUnit Vintage[0m [32m✔[0m
+[36m   └─[0m [36mAppTest[0m [32m✔[0m
+[36m      └─[0m [34mtestAppHasAGreeting[0m [36m30414 ms[0m [32m✔[0m
+
+Test run finished after 30445 ms
+[         3 containers found      ]
+[         0 containers skipped    ]
+[         3 containers started    ]
+[         0 containers aborted    ]
+[         3 containers successful ]
+[         0 containers failed     ]
+[         1 tests found           ]
+[         0 tests skipped         ]
+[         1 tests started         ]
+[         0 tests aborted         ]
+[         1 tests successful      ]
+[         0 tests failed          ]
+
