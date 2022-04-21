@@ -1,7 +1,7 @@
 package com.github.paulorfarah.mavenproject;
 
-import java.math.BigDecimal;
-import java.util.Random;
+import java.io.File;
+import java.io.IOException;
 
 public class App {
 
@@ -15,6 +15,7 @@ public class App {
     		e.printStackTrace();
     	}
         justPrintMessage();
+        createFile();
 //        stringBuilder();
 //        try {
 //        	Thread.sleep(1 * 1000);
@@ -67,6 +68,20 @@ public class App {
 		System.out.println("testing 1 2 3...");
 		System.out.println("testing 1 2 3...");
 	}
+	
+	public void createFile() {
+	    try {
+	      File myObj = new File("filename.txt");
+	      if (myObj.createNewFile()) {
+	        System.out.println("File created: " + myObj.getName());
+	      } else {
+	        System.out.println("File already exists.");
+	      }
+	    } catch (IOException e) {
+	      System.out.println("An error occurred.");
+	      e.printStackTrace();
+	    }
+	  }
 	
 	
     public static void main(String[] args) {
