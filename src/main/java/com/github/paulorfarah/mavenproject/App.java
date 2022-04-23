@@ -1,6 +1,7 @@
 package com.github.paulorfarah.mavenproject;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class App {
@@ -15,7 +16,12 @@ public class App {
     		e.printStackTrace();
     	}
         justPrintMessage();
-        createFile();
+//        createFile();
+        try {
+			testJavaExceptionThrow();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 //        stringBuilder();
 //        try {
 //        	Thread.sleep(1 * 1000);
@@ -70,6 +76,7 @@ public class App {
 	}
 	
 	public void createFile() {
+		//only in jdk 7 and 8
 	    try {
 	      File myObj = new File("filename.txt");
 	      if (myObj.createNewFile()) {
@@ -77,12 +84,23 @@ public class App {
 	      } else {
 	        System.out.println("File already exists.");
 	      }
+	      FileWriter myWriter = new FileWriter("filename.txt");
+	      for (int i=0; i<100000000; i++) {
+	          myWriter.write("Files in Java might be tricky, but it is fun enough!");		
+	          System.out.println("*** File content created...");
+	      }
+          myWriter.close();
+          System.out.println("Successfully wrote to the file.");
 	    } catch (IOException e) {
 	      System.out.println("An error occurred.");
 	      e.printStackTrace();
 	    }
 	  }
 	
+	public void testJavaExceptionThrow() throws Exception {
+	    String test = null;
+	    test.toString();
+	}
 	
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
