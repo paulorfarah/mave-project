@@ -17,11 +17,11 @@ public class App {
     	}
         justPrintMessage();
 //        createFile();
-        try {
-			testJavaExceptionThrow();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+//        try {
+//			testJavaExceptionThrow();
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
 //        stringBuilder();
 //        try {
 //        	Thread.sleep(1 * 1000);
