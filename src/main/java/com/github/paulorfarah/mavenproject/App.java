@@ -10,11 +10,11 @@ public class App {
         System.out.println("start getGreeting");
 //        countSetBits(1);
         
-        try {
-    		Thread.sleep(30000);
-    	} catch(InterruptedException e) {
-    		e.printStackTrace();
-    	}
+//        try {
+//    		Thread.sleep(30000);
+//    	} catch(InterruptedException e) {
+//    		e.printStackTrace();
+//    	}
         justPrintMessage();
 //        createFile();
 //        try {
